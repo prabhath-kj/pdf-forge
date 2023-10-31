@@ -15,11 +15,11 @@ const Navbar = () => {
   const titles:Title[] = [
     {
       title: "Pricing",
-      path: "#about",
+      path: "#pricing",
     },
     {
       title: "Teams",
-      path: "#projects",
+      path: "#teams",
     },
     {
       title: "Log In",

@@ -21,13 +21,13 @@ const FileUploadForm = () => {
     // Perform PDF validation
     if (selectedFile && selectedFile.type === 'application/pdf') {
       const formData = new FormData();
-      formData.append('pdf', selectedFile);
+      formData.set('pdf', selectedFile);
 
       // Create a new AbortController for the current request
       controllerRef.current = new AbortController();
 
       try {
-        const response = await fetch('/api/upload', {
+        const response = await fetch('/api/files/upload', {
           method: 'POST',
           body: formData,
           signal: controllerRef.current.signal,

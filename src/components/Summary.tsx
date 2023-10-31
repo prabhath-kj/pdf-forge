@@ -5,8 +5,6 @@ import React, { useTransition, useState } from "react";
 
 
 const Summary = () => {
-
-
   return (
     <section className="text-black bg-gray-100 px-4" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8  xl:gap-16 sm:py-16 ">

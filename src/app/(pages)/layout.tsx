@@ -1,5 +1,7 @@
 import Navbar from "@/components/Nav"
 import Footer from "@/components/Footer"
+
+
 export default function RootLayout({
   children,
 }: {
